@@ -6,7 +6,7 @@ public class Cylinder extends Circle {
 		super();
 		height=1.0;	
 	}
-	public Cylinder(double h) {
+	public Cylinder(double h) {		//creates a cylinder calling super on the cirlce class contructor
 		super();
 		this.height=h;
 	}
@@ -29,8 +29,8 @@ public class Cylinder extends Circle {
 	return	super.toString()+"\nHeight: "+this.height+"\nVolume: "+this.getVolume();
 		
 	}
-	public double getVolume() {
+	public double getVolume() {		
 	return(super.getArea()*this.height);
 	}
-	//pi r squared* height
+	
 }
